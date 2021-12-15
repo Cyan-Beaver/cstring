@@ -1,11 +1,16 @@
+#include <cstring/strlen.h>
 #include <stdio.h>
-#include <string.h>
+#include <cstring/strcat.h>
 
-#include <cstring/header.h>
+int main(){
 
-int main()
-{
-	printf( "Hello, World!\n" );
+	char array[100];
+
+	mstrcat("hello", " world", array);
+
+	printf(array);
+
+	printf("%llu\n", mstrlen("hello"));
 
 	return 0;
 }
